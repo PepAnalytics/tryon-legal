@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TryOn AI — See how you'll look before you spend money</title>
+  <meta name="description" content="TryOn AI previews clothing, hairstyles, beards, makeup and tattoos on your own photo before you commit." />
+  <!-- Static landing + privacy link, ready for free hosting (Cloudflare Pages /
+       GitHub Pages) on a free domain. No build step. -->
+  <style>
+    :root { --violet:#6C4DFF; --pink:#FF4D9D; --ink:#0E0D14; --muted:#5b5b6b; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      color: var(--ink); background:#fff; line-height:1.55; }
+    .hero { padding: 72px 20px 56px; text-align:center;
+      background: linear-gradient(135deg, var(--violet), var(--pink)); color:#fff; }
+    .hero h1 { font-size: clamp(28px, 6vw, 48px); margin:0 0 12px; }
+    .hero p { font-size: clamp(16px, 3vw, 20px); opacity:.95; margin:0 auto; max-width:620px; }
+    .wrap { max-width: 860px; margin: 0 auto; padding: 40px 20px; }
+    .cats { display:flex; flex-wrap:wrap; gap:10px; justify-content:center; margin-top:24px; }
+    .chip { background:rgba(255,255,255,.18); border:1px solid rgba(255,255,255,.35);
+      padding:8px 14px; border-radius:999px; font-size:14px; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:20px; margin-top:16px; }
+    .card { border:1px solid #eee; border-radius:16px; padding:20px; }
+    .card h3 { margin:0 0 8px; }
+    footer { text-align:center; color:var(--muted); font-size:14px; padding:32px 20px 56px; }
+    a { color: var(--violet); }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <h1>TryOn AI</h1>
+    <p>See how you'll look before you spend money. Preview clothing, hairstyles,
+       beards, makeup and tattoos on your own photo.</p>
+    <div class="cats">
+      <span class="chip">Clothing</span><span class="chip">Hairstyle</span>
+      <span class="chip">Beard</span><span class="chip">Makeup</span>
+      <span class="chip">Tattoo</span>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="grid">
+      <div class="card"><h3>1. Add your photo</h3>
+        <p>Use a clear, well-lit photo of yourself.</p></div>
+      <div class="card"><h3>2. Pick a reference</h3>
+        <p>Choose the look you want to try on.</p></div>
+      <div class="card"><h3>3. Get your result</h3>
+        <p>AI shows you the change — then decide.</p></div>
+    </div>
+
+    <p style="margin-top:40px">TryOn AI is a decision-making tool, not a photo
+      editor. It helps you avoid buying or committing to a look you won't love.</p>
+  </main>
+
+  <footer>
+    <p><a href="./privacy.html">Privacy Policy</a> · Contact:
+       <a href="mailto:papiw19@gmail.com">papiw19@gmail.com</a></p>
+    <p>© 2026 TryOn AI</p>
+  </footer>
+</body>
+</html>
